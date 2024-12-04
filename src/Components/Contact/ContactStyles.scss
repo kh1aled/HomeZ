@@ -1,0 +1,107 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+.contact {
+  color: white;
+  background-color: white;
+  padding-bottom: 2rem;
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Aref Ruqaa", serif;
+  overflow: hidden;
+  .row {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    .image_container {
+      position: relative;
+      height: 32rem;
+      .image-inside-container {
+        width: 30rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 35rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgba(232 232 232 / 93%);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .description {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      padding: 4rem;
+      gap: 0.4rem;
+      .row{
+        width: 100% !important;
+      }
+      .item{
+        box-shadow:0 0 4px 0px #f2e6e6;
+        .details {
+          width: 100%;
+          gap: 0 16px;
+          .primaryText{
+            font-size: 1.65rem;
+          }
+          .icon {
+            padding: 10px 13px;
+            background: #eeeeff;
+            border-radius: 5px;
+            color: blue;
+          }
+        }
+        .callnow{
+          padding: 10px 13px;
+          background: #eeeeff;
+          color: blue;
+          width: 100%;
+          margin: 1rem 0 0 0 ;
+        }
+      }
+      // .accordion{
+      //   margin-top: 2rem;
+      //   border: none;
+      //   .accordion-item{
+      //       background: white;
+      //       border: 0.8px solid rgba(128 , 128 , 128 ,0.143);
+      //       border-radius: 8px;
+      //       overflow: hidden;
+      //       margin-bottom: 20px;
+
+      //       &.expanded{
+      //           box-shadow: 0 0 5px 1px #a7a0a0;
+      //       }
+      //       .accordionButton {
+      //        background-color: white;
+      //        padding: 1rem;
+      //        width: 100%;
+      //        justify-content: space-between;
+      //        cursor: pointer;
+      //        gap: 1rem;
+      //        .icon{
+      //           padding: 10px;
+      //           background: #eeeeff;
+      //           border-radius: 5px;
+      //           color: blue;
+      //        }
+      //        .primaryText{
+      //           font-size: 1.1rem !important;
+      //           text-align: center;
+      //        }
+      //       }
+      //   }
+      // }
+    }
+  }
+}

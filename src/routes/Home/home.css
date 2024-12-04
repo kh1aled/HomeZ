@@ -1,0 +1,11 @@
+.home:nth-child(1) {
+  position: relative;
+}
+.home:nth-child(1) .white-gradient {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.5522);
+  filter: blur(100px);
+  z-index: 10;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,77 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+.residencies {
+    padding: 3.7rem;
+    .r-container{
+        overflow: hidden;
+    }
+  .r-head {
+    margin-bottom: 2rem;
+  }
+  .swiper{
+    overflow: visible;
+  }
+  .r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    transition: all 300ms ease-in;
+    &:hover {
+      scale: 1.025;
+      cursor: pointer;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(136, 160, 255, 0.46) 217.91%
+      );
+      box-shadow: 0px 72px 49px -51px rgba(136,160,255,0.21);
+    }
+    img {
+      width: 100%;
+      max-width: 15rem;
+    }
+    .r-price{
+      font-size: 1.3rem;
+      font-weight: 600;
+      
+    }
+    .title{
+      font-size: 1.5rem;
+    }
+    .desc {
+      font-size: 0.7rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      height: 60px;
+      text-wrap: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 5; /* عدد الأسطر المسموح بها */
+      -webkit-box-orient: vertical; /* التحكم في اتجاه الصندوق */
+    }
+  }
+}
+.r-button{
+    top: -4rem;
+    right: 0;
+    z-index: 11;
+    button{
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+        color: blue;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+    .prevbtn{
+        background-color: #EEEEFF;
+    }
+    .nextbtn{
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    }
+}

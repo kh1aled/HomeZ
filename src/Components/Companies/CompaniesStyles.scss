@@ -1,0 +1,11 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+.companies{
+  background-color: white;
+  padding: 10px 20rem;
+  img{
+    width: 10rem;
+    height: 100%;
+  }
+}

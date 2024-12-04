@@ -1,0 +1,224 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+.work {
+  width: 100%;
+  padding: 40px 0;
+  // background-color: #31333b;
+  //#31333b
+  overflow: hidden;
+  background-color: #080c14;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Aref Ruqaa", serif;
+  // background-image: url(../../assets/assets.png);
+  // &.dark {
+  //   background-color: #080c14;
+  //   .title {
+  //     color: white;
+  //   }
+  //   .description {
+  //     color: #fff;
+  //     h1 {
+  //       p {
+  //         color: #f7f4f4;
+  //       }
+  //     }
+  //   }
+  //   .areas {
+  //     .slider {
+  //       .card {
+  //         .project-title {
+  //           background-color: #111827;
+  //           h1 {
+  //             color: #f3f4f6;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  &.light {
+    background-color: #fff;
+    .title {
+      color: #121212;
+    }
+    .description {
+      color: #121212;
+      font-weight: 700;
+
+      h1 {
+        p {
+          color: #000000;
+        }
+      }
+    }
+    .slider {
+      .slider_container {
+        .work-item {
+          .card{
+            .project-title{
+
+              background-color: #f3f4f6;
+              box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.4);
+              h1 , i{
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn{
+      background-color: rgb(7 ,89 ,133);
+      color: white;
+      &:hover{
+        background: transparent;
+        border:1px solid rgb(7 ,89 ,133);
+        color: rgb(7 ,89 ,133);
+        a{
+          color: rgb(7 ,89 ,133);
+        }
+      }
+    }
+  }
+  .title {
+    width: 30%;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 3rem auto;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 0.3rem;
+      background-color: rgb(14, 165, 233);
+      top: 50%;
+      right: 100%;
+      border-radius: 20px;
+      transform: translateY(-50%);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 0.2rem;
+      background-color: rgb(14, 165, 233);
+      top: 50%;
+      left: 100%;
+      border-radius: 20px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .slider {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+    .slider_container {
+      // gap: 1rem;
+      justify-content: center;
+      .work-item {
+        height: 22rem;
+        margin: 50px 0;
+        .card {
+          border: none;
+          outline: 0;
+          cursor: pointer;
+          transition: 0.5s;
+          padding: 0 !important;
+          width: 100%;
+          height: 100%;
+          flex: 0 0 auto;
+          border-radius: 12px;
+          text-align: center;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          position: relative;
+          transform: 0.5s;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+          }
+          &:hover .line{
+            width: 96%;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+          }
+          .project-title {
+            position: absolute;
+            left: 0;
+            width: 96%;
+            height: 5rem;
+            border-radius: 12px;
+            background-color: #111827;
+            margin: auto;
+            right: 0;
+            bottom: -4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1 {
+              color: #fff;
+              font-size: 4vmin;
+            }
+          }
+          .line {
+            position: absolute;
+            left: 0;
+            width: 0%;
+            height: 0.2rem;
+            border-radius: 12px;
+            background-color: $blueColor;
+            margin: auto;
+            right: 0;
+            bottom: -4rem;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    background-color: rgb(6, 182, 212);
+    padding: 0.5rem 1rem;
+    margin: 40px auto;
+    display: flex;
+    font-size: 21px;
+    border: 2px solid transparent;
+    a {
+      color: #fff ;
+    }
+    &:hover {
+      background: transparent;
+      border: 2px solid rgb(6, 182, 212) !important;
+    }
+  }
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideAnimationAr {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

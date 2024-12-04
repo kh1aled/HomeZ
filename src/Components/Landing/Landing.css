@@ -1,0 +1,97 @@
+.landing {
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Aref Ruqaa", serif;
+  background-color: #131110;
+}
+.landing .row {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.landing .row .image_container {
+  position: relative;
+  height: 37rem;
+}
+.landing .row .image_container .image-inside-container {
+  width: 30rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+.landing .row .image_container .image-inside-container img {
+  width: 100%;
+  height: 100%;
+}
+.landing .row .description {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 3rem;
+}
+.landing .row .description .hero-title {
+  position: relative;
+  z-index: 1;
+}
+.landing .row .description .hero-title .orange-circle {
+  height: 4rem;
+  width: 4rem;
+  background: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  position: absolute;
+  border-radius: 999px;
+  right: 28%;
+  top: -6%;
+  z-index: -1;
+}
+.landing .row .description .hero-title h1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 4rem;
+}
+.landing .row .description .search-bar {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374);
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.landing .row .description .search-bar i {
+  color: blue;
+}
+.landing .row .description .search-bar input {
+  outline: 0;
+  border: 0;
+  width: 80%;
+}
+.landing .row .description .stats {
+  justify-content: space-between;
+  gap: 12px;
+}
+.landing .row .description .stats .stat .plus {
+  color: orange;
+}
+.landing .row .description .stats .stat span:nth-child(1) {
+  font-size: 2rem;
+}
+.landing .row .description h1 {
+  text-transform: capitalize;
+}
+.landing .row .description h1 span {
+  color: rgb(244, 139, 28);
+}
+.landing .row .description p {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=Landing.css.map */

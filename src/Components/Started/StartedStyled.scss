@@ -1,0 +1,23 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+.started{
+    width: 100%;
+    background-color: white;
+    .started-container{
+        width: 80%;
+        margin: 5rem auto;
+        background-color: $Blue;
+        h2{
+            padding: 0.5rem 0;
+        }
+        p{
+            padding: 0.5rem 0;
+        }
+        .btn{
+            background-color: rgb(2 2 13 / 12%);
+
+        }
+
+    }
+}

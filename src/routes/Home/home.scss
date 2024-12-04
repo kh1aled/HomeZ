@@ -1,0 +1,16 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+.home:nth-child(1){
+    // background-color: $black;
+    position: relative;
+    .white-gradient{
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background: rgba( 255 , 255 ,255, 0.5522);
+        filter: blur(100px);
+        z-index: 10;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../../styles/variables/colors" as *;
+@use "../../styles/variables/mediaQuery" as *;
+@use "../../styles/mixins" as *;
+
+.fotter {
+  width: 100%;
+  .row{
+    width: 100%;
+    padding: 10px 40px;
+  }
+  .copyright {
+    width: 100%;
+    margin: 63px auto 0px auto;
+    padding: 10px;
+    border-top: 1px solid #000;
+    background-color: #000;
+
+    p {
+      text-align: center;
+      color: #ffffff82;
+      text-transform: capitalize;
+      margin: 10px 0;
+    }
+  }
+}

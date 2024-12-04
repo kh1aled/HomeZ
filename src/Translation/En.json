@@ -1,0 +1,36 @@
+{
+  "lang": "en",
+  "navbar": {
+    "title": "Children's education school",
+    "lang": "arabic"
+  },
+  "summary":{
+    "h1":"Full-Stack",
+    "span":"Developer!",
+    "body":"Hello! I'm Khaled, a Full-Stack Developer with a passion for building and developing web applications. I specialize in both front-end and back-end development, using technologies like React, PHP, and MySQL, along with an interest in cybersecurity and performance optimization. My goal is to deliver innovative digital solutions that offer exceptional user experiences and meet project needs effectively.",
+    "button":"contact me"
+  },
+  "eduction":{
+    "h1":"My Eduction",
+    "title":"student",
+    "span":"in computer science!",
+    "body":"I’m Khaled, a second-year Computer Science student with a passion for web development and cybersecurity. I have 3 years of experience as a professional web developer, building interactive websites using HTML, CSS, JavaScript, and React for front-end, and PHP and MySQL for back-end development.",
+    "button":"contact me",
+    "title2":"Areas of Interest",
+    "visionTitle":"My Vision",
+    "vision":"My goal is to blend my expertise in web development with cybersecurity skills to offer secure and effective tech solutions, while continuously improving my technical and personal skills."
+  },
+  "about":{
+    "mytitle":"about",
+    "prename" : "Dev/",
+    "name":"Khaled",
+    "name2":"Hamdy",
+    "title":"With us, designing your website is easier and faster!",
+    "work":"My Work",
+    "button": "contact me",
+    "button2" :"download my cv",
+    "desc":"A full-stack web developer with 3 years of experience in building and enhancing web applications using modern technologies. I have strong skills in HTML, CSS, JavaScript, React, Redux, Sass, PugJS, and Bootstrap, along with backend expertise in PHP, MySQL, and Laravel. My goal is to deliver creative solutions that meet client needs and provide the best user experience."
+  }
+  
+ 
+}

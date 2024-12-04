@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.residencies {
+  padding: 3.7rem;
+}
+.residencies .r-container {
+  overflow: hidden;
+}
+.residencies .r-head {
+  margin-bottom: 2rem;
+}
+.residencies .swiper {
+  overflow: visible;
+}
+.residencies .r-card {
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  transition: all 300ms ease-in;
+}
+.residencies .r-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(136, 160, 255, 0.46) 217.91%);
+  box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+.residencies .r-card img {
+  width: 100%;
+  max-width: 15rem;
+}
+.residencies .r-card .r-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.residencies .r-card .title {
+  font-size: 1.5rem;
+}
+.residencies .r-card .desc {
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  text-wrap: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* عدد الأسطر المسموح بها */
+  -webkit-box-orient: vertical; /* التحكم في اتجاه الصندوق */
+}
+
+.r-button {
+  top: -4rem;
+  right: 0;
+  z-index: 11;
+}
+.r-button button {
+  font-size: 1.2rem;
+  padding: 0.2rem 1rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.r-button .prevbtn {
+  background-color: #EEEEFF;
+}
+.r-button .nextbtn {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=ResidenciesStyles.css.map */

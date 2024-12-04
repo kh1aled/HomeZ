@@ -1,0 +1,18 @@
+.started {
+  width: 100%;
+  background-color: white;
+}
+.started .started-container {
+  width: 80%;
+  margin: 5rem auto;
+  background-color: #4066ff;
+}
+.started .started-container h2 {
+  padding: 0.5rem 0;
+}
+.started .started-container p {
+  padding: 0.5rem 0;
+}
+.started .started-container .btn {
+  background-color: rgba(2, 2, 13, 0.12);
+}/*# sourceMappingURL=StartedStyled.css.map */
